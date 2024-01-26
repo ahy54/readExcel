@@ -57,6 +57,7 @@ public class CSVtoDataBankSparkasse {
 
             int listIndex = 0;
             float zwischenBetrag = 0;
+            System.out.println("Start of operation");
 
             StringBuilder completeInsertString = new StringBuilder();
             for (String[] array : r) {
@@ -93,6 +94,7 @@ public class CSVtoDataBankSparkasse {
 
 
             st.executeUpdate(completeInsertString.toString());
+            System.out.println("End of Operation");
 
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);

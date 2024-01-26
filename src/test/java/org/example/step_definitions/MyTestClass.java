@@ -2,7 +2,6 @@ package org.example.step_definitions;
 
 import com.opencsv.exceptions.CsvException;
 import org.junit.Test;
-
 import java.io.IOException;
 
 public class MyTestClass extends CSVtoDataBankSparkasse {
