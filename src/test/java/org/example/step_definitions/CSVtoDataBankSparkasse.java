@@ -31,7 +31,7 @@ public class CSVtoDataBankSparkasse {
 
 
         } catch (Exception e) {
-            System.out.println("Something happened");
+            System.out.println("Something happened 1");
             e.printStackTrace();
         }
 
@@ -48,6 +48,7 @@ public class CSVtoDataBankSparkasse {
             try {
                 db = DriverManager.getConnection(url, user, password);
             } catch (SQLException e) {
+                System.out.println("Something happened 2");
                 throw new RuntimeException(e);
             }
             Statement st = db.createStatement();
@@ -97,6 +98,7 @@ public class CSVtoDataBankSparkasse {
             System.out.println("End of Operation");
 
         } catch (ClassNotFoundException | SQLException e) {
+            System.out.println("Something happened 3");
             throw new RuntimeException(e);
         }
     }
